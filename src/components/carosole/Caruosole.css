@@ -1,0 +1,55 @@
+/* Add this CSS in your global CSS file or component-specific CSS */
+
+/* Custom styles for the arrow buttons */
+.custom-carousel {
+    position: relative;
+  }
+  
+  .custom-carousel .carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .custom-carousel .carousel .slider-wrapper {
+    width: calc(100% - 2rem); /* Adjust as needed */
+    margin: 0 1rem;
+  }
+  
+  .custom-carousel .carousel .slider-wrapper .thumbs-wrapper {
+    display: none;
+  }
+  
+  .custom-carousel .carousel .slider-wrapper .thumbs {
+    display: none;
+  }
+  
+  .custom-carousel .carousel .slider-wrapper .slider {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  /* Add custom styles to the arrow buttons */
+  .custom-carousel .carousel .slider-wrapper .slider .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0, 0, 0, 0.5); /* Background color */
+    color: white; /* Text color */
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-carousel .carousel .slider-wrapper .slider .carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.8); /* Hover background color */
+  }
+  

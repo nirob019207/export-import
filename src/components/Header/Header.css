@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+nav{
+  
+
+
+  
+  
+   z-index: 10;
+   top: 0;
+}
+
+/* Add this CSS code to your existing CSS or a new stylesheet */
+.homepage-content {
+    background-image: url('../image/cloud.png'); /* Replace with your image URL */
+    background-size: 100% 100%;
+    background-color: rgb(98, 98, 204);
+    margin-top: 20px;
+    height: 100vh;
+}
+
+.sub-homepage-content {
+     /* Replace with your image URL */
+   
+    background-color: rgb(12, 12, 40);
+    margin-top: 20px;
+   
+    padding: 4px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .homepage-content {
+        height: 100vh; /* Adjust for smaller screens */
+    }
+    .main-sec {
+       
+        width:300px;
+       
+      }
+
+}
+
+
+
+
+@keyframes expandDropdown {
+  0% {
+    transform: perspective(10px) rotate3d(1, 0, 0deg, -70deg);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+}
+
+/* Ensure the parent elements allow the dropdown to be w-full */
+.dropdown {
+ 
+  background: rgb(17 24 39);
+
+ margin-left: -100px;
+  overflow: hidden;
+  transform: perspective(400px) rotate3d(1, 0, 0, -70deg);
+  transform-origin: 0% 0;
+  opacity: 75;
+  animation: expandDropdown 0.5s ease-in forwards;
+}
+
+
+
+
+/*slider*/
+
+main {
+  overflow: hidden;
+ 
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Set a high z-index for the header to make it appear above other elements */
+}
+
+  @media (max-width: 998px) {
+    .homepage-content {
+        height: 100vh; /* Adjust for smaller screens */
+    }
+    .main-sec {
+       
+        width:700px;
+       
+      }
+      .singlecard{
+     
+        padding: 20px;
+      
+      }
+
+}
+
+@media (max-width: 1050px) {
+    .homepage-content {
+        height: 100vh; /* Adjust for smaller screens */
+    }
+  
+       
+        .main-slide{
+            display: none;
+        }
+    
+
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 900px;
+
+}
+.slide {
+  min-width: 80%;
+  flex-shrink: 0;
+  
+  height: 90%;
+}
+.slide img {
+  width: 100%;
+  height: 600px;
+
+ 
+}
+
+.home2{
+  background-color: #0c0822;
+}
+
+
+.home2-back {
+  /* Styles for the background div */
+  background-image: url('../image/concept2.png');
+  background-color: blue;
+   /* Replace with your image URL */
+    background-size: 100% 100%;
+    background-color: rgb(41, 41, 67);
+    margin-top: 20px;
+    height: 50vh;
+ 
+
+
+  /* Other styles for this div */
+}
+.home2-back1 {
+  /* Styles for the background div */
+  background-image: url('../image/clou.png');
+   /* Replace with your image URL */
+    background-size: 100% 100%;
+    background-color: rgb(98, 98, 204);
+    margin-top: 20px;
+    height: 50vh;
+    opacity: 900;
+ 
+
+
+  /* Other styles for this div */
+}
