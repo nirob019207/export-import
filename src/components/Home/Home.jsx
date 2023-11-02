@@ -2,6 +2,7 @@ import React from 'react'
 
 import Carusole from '../carosole/Carusole'
 import Product from '../Product/Product'
+import Ceo from '../About/Ceo'
 
 
 const Home = () => {
@@ -11,6 +12,8 @@ const Home = () => {
    <Carusole/>
    </div>
     <Product/>
+
+    <Ceo/>
 
    
     </div>
